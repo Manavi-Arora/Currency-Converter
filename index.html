@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex">
+
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="amount">
+            <input placeholder="Enter Amount" type="number">
+        </div>
+        
+        <div class="dropdown flex">  
+           
+            <div class="from flex">
+                <div class="content">
+                    <p>From :</p>
+                    <img src="https://flagsapi.com/US/flat/64.png">
+                </div>
+                <select class="flex" id="fromCountry">
+                </select>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 9H6.65856C5.65277 9 5.14987 9 5.02472 8.69134C4.89957 8.38268 5.25517 8.01942 5.96637 7.29289L8.21091 5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 15H17.3414C18.3472 15 18.8501 15 18.9753 15.3087C19.1004 15.6173 18.7448 15.9806 18.0336 16.7071L15.7891 19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <div class="to flex">
+                <div class="content">
+                    <p>To : </p>
+                    <img src="https://flagsapi.com/IN/flat/64.png">
+                </div>             
+                <select class="flex" id="toCountry">
+                </select>
+            </div>
+
+        </div>
+        <div class="bottom">
+            <button id="btn">Get Exchange Rate</button>
+            <p class="text"></p>
+        </div>
+        
+    </div>
+<script src="currencyCode.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
